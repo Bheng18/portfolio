@@ -18,7 +18,7 @@ export default function Deposits() {
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Joebert Fundador Tan</Title>
+      <Title>Joebert Fundador</Title>
       <Divider />
       <Typography component="p" variant="subtitle2">
         <p>8E Mangga Street, Block 37 Addition Hills, Mandaluyong City <br></br>
