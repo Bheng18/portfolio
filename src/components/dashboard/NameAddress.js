@@ -22,8 +22,8 @@ export default function Deposits() {
       <Divider />
       <Typography component="p" variant="subtitle2">
         <p>8E Mangga Street, Block 37 Addition Hills, Mandaluyong City <br></br>
-           +639176932537<br></br>
-           joebert.fundador@gmail.com<br></br>
+           Contact#: +639176932537<br></br>
+           Email: joebert.fundador@gmail.com<br></br>
            Github: <a href="https://github.com/Bheng18" target="_blank">https://github.com/Bheng18</a><br></br>
            ThesisProject: <a href="http://jca.x10host.com/JCAweb/" target="_blank">http://jca.x10host.com/JCAweb/</a><br></br>
         </p>
