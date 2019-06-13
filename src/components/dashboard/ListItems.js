@@ -51,7 +51,7 @@ export const mainListItems = (
       <ListItemText primary="Education" />
     </ListItemLink>
 
-    <ListItemLink button href="https://jf-portfolio.netlify.com/" target="_blank">
+    <ListItemLink button href="http://jca.x10host.com/JCAweb/" target="_blank">
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>

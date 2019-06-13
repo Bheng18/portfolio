@@ -24,6 +24,7 @@ const rows = [
   createData(3, 'springBoot-JPA-Hibernate-MySQL-REST-API-CRUD-back-end', 'None', 'SpringBoot', 'JPA-Hibernate, MySQL', 'Create, Read, Update, Delete', <a href="https://github.com/Bheng18/springBoot-JPA-Hibernate-MySQL-REST-API-CRUD-back-end" target="_blank">Open Link</a>),
   createData(4, 'nodejs-mysql-back-end-crud', 'None', 'Express.js & Node.js', 'MySQL', 'Create, Read, Update, Delete', <a href="https://github.com/Bheng18/nodejs-mysql-back-end-crud" target="_blank">Open Link</a>),
   createData(5, 'onlineshop', 'Vue.js/Pug', 'Express.js & Node.js', 'MongoDb', 'Create, Read, Update, Delete', <a href="https://github.com/Bheng18/onlineshop" target="_blank">Open Link</a>),
+  // createData(6, 'onlineshop', 'Vue.js/Pug', 'Express.js & Node.js', 'MongoDb', 'Create, Read, Update, Delete', <a href="https://github.com/Bheng18/onlineshop" target="_blank">Open Link</a>),
 ];
 
 const useStyles = makeStyles(theme => ({
