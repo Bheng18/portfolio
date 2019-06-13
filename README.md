@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `To Run live production in browser`
+
+Runs the app in the production mode.<br>
+Open [https://jf-portfolio.netlify.com/](https://jf-portfolio.netlify.com/) to view it in the browser.
+
 ### `npm start`
 
 Runs the app in the development mode.<br>
