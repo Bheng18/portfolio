@@ -133,6 +133,10 @@ export default function Dashboard() {
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
+const printPdf = () => {
+  window.print();
+}
+
   return (
     <div className={classes.root}>
       <CssBaseline />
@@ -150,11 +154,11 @@ export default function Dashboard() {
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
             Dashboard
           </Typography>
-          {/* <IconButton color="inherit">
+          <IconButton color="inherit" onClick={printPdf}>
             <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-               Thesis
+               Print PDF
             </Typography>
-          </IconButton> */}
+          </IconButton>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
@@ -181,8 +185,8 @@ export default function Dashboard() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>
+        <Container maxWidth="lg" className={classes.container} >
+          <Grid container spacing={2}>
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
               <Paper className={fixedHeightPaper}>
