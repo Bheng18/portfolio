@@ -1,54 +1,71 @@
 import React from 'react';
+import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
 import DashboardIcon from '@material-ui/icons/Dashboard';
-import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
-import PeopleIcon from '@material-ui/icons/People';
+import SchoolIcon from "@material-ui/icons/School";
+// import FolderSharedIcon from "@material-ui/icons/FolderShared";
+import WorkIcon from '@material-ui/icons/Work';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
+// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+// import PeopleIcon from '@material-ui/icons/People';
 import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
+function ListItemLink(props) {
+  return <ListItem button component="a" {...props} />;
+}
+
 export const mainListItems = (
   <div>
-    <ListItem button>
+<List component="nav" aria-label="Secondary mailbox folders">
+    <ListItemLink button href="#dashboard">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
-    </ListItem>
-    <ListItem button>
+    </ListItemLink>
+
+    <ListItemLink button href="#projects">
       <ListItemIcon>
-        <ShoppingCartIcon />
+          <WorkIcon />
       </ListItemIcon>
-      <ListItemText primary="Orders" />
-    </ListItem>
-    <ListItem button>
+      <ListItemText primary="Projects" />
+    </ListItemLink>
+
+    <ListItemLink button href="#experience">
       <ListItemIcon>
-        <PeopleIcon />
+          <WorkOutlineIcon />
       </ListItemIcon>
-      <ListItemText primary="Customers" />
-    </ListItem>
-    <ListItem button>
+      <ListItemText primary="Work Experience" />
+    </ListItemLink>
+
+    <ListItemLink button href="#education">
       <ListItemIcon>
-        <BarChartIcon />
+        {/* <FolderSharedIcon /> */}
+        <SchoolIcon />
       </ListItemIcon>
-      <ListItemText primary="Reports" />
-    </ListItem>
-    <ListItem button>
+      <ListItemText primary="Education" />
+    </ListItemLink>
+
+    <ListItemLink button href="https://jf-portfolio.netlify.com/" target="_blank">
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Integrations" />
-    </ListItem>
+    </ListItemLink>
+
+    </List>
   </div>
 );
 
 export const secondaryListItems = (
   <div>
     <ListSubheader inset>Saved reports</ListSubheader>
-    <ListItem button>
+    <ListItem button >
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>

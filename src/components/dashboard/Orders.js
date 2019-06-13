@@ -35,8 +35,9 @@ const useStyles = makeStyles(theme => ({
 export default function Orders() {
   const classes = useStyles();
   return (
+    <div id="projects">
     <React.Fragment>
-      <Title>Recent Self Study Project - CRUD Operation</Title>
+      <Title>Self Study Project - CRUD Operation</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
@@ -69,5 +70,6 @@ export default function Orders() {
         </Link>
       </div>
     </React.Fragment>
+    </div>
   );
 }

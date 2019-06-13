@@ -17,6 +17,7 @@ const useStyles = makeStyles({
 export default function Deposits() {
   const classes = useStyles();
   return (
+    <div id="dashboard">
     <React.Fragment>
       <Title>Joebert Fundador</Title>
       <Divider />
@@ -37,5 +38,6 @@ export default function Deposits() {
         </Link>
       </div> */}
     </React.Fragment>
+    </div>
   );
 }

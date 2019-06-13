@@ -7,15 +7,17 @@ import Typography from '@material-ui/core/Typography';
 import Title from './Title';
 import { Divider } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
   depositContext: {
+    marginTop: theme.spacing(0),
     flex: 1,
   },
-});
+}));
 
 export default function Deposits() {
   const classes = useStyles();
   return (
+    <div id="education" className={classes.depositContext}>
     <React.Fragment>
       <Title>Education</Title>
       <Divider />
@@ -31,5 +33,6 @@ export default function Deposits() {
       </Typography>
            
     </React.Fragment>
+    </div>
   );
 }
