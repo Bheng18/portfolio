@@ -19,8 +19,9 @@ export default function Deposits() {
   return (
     <div id="dashboard">
     <React.Fragment>
-      <Title>Joebert Fundador</Title>
+      <Title>About Me</Title>
       <Divider />
+      
       <Typography component="p" variant="subtitle2">
         <p>8E Mangga Street, Block 37 Addition Hills, Mandaluyong City <br></br>
            Contact#: +639176932537<br></br>

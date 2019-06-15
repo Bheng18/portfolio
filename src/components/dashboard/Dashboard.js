@@ -19,6 +19,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './ListItems';
 // import Chart from './Chart';
+import Logo from './Logo'
 import NameAddress from './NameAddress';
 import Deposits from './Deposit';
 import Orders from './Orders';
@@ -27,16 +28,16 @@ import WorksExperience from './WorksExperience';
 import SeminarWorkshopAttended from './SeminarsWorkshopAttended';
 import Education from './Education';
 import StudiesCompleted from './StudiesCompleted';
-import Objective from './Objective';
+import Portfolio from './portfolio';
 
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love by the '}
-      <Link color="inherit" href="https://material-ui.com/">
-        Material-UI
+      {'Built with love my '}
+      <Link color="inherit" href="http://jca.x10host.com/JCAweb/" target="_blank">
+         Thesis Project
       </Link>
-      {' team.'}
+      {' ...'}
     </Typography>
   );
 }
@@ -133,9 +134,9 @@ export default function Dashboard() {
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
-const printPdf = () => {
-  window.print();
-}
+// const printPdf = () => {
+//   window.print();
+// }
 
   return (
     <div className={classes.root}>
@@ -149,16 +150,36 @@ const printPdf = () => {
             onClick={handleDrawerOpen}
             className={clsx(classes.menuButton, open && classes.menuButtonHidden)}
           >
-            <MenuIcon />
+             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Dashboard
+            <Logo />
           </Typography>
-          <IconButton color="inherit" onClick={printPdf}>
+          <IconButton color="inherit" >
+            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+               Home
+            </Typography>
+          </IconButton>
+          <IconButton color="inherit" >
+            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+               About Me
+            </Typography>
+          </IconButton>
+          <IconButton color="inherit" >
+            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+               Portfolio
+            </Typography>
+          </IconButton>
+          <IconButton color="inherit" >
+            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
+               Contact Me
+            </Typography>
+          </IconButton>
+          {/* <IconButton color="inherit" onClick={printPdf}>
             <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
                Print PDF
             </Typography>
-          </IconButton>
+          </IconButton> */}
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
               <NotificationsIcon />
@@ -187,6 +208,14 @@ const printPdf = () => {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container} >
           <Grid container spacing={2}>
+         
+           {/* Recent Deposits */}
+           <Grid item xs={12} md={4} lg={3}>
+              <Paper className={fixedHeightPaper}>
+                <Deposits />
+              </Paper>
+            </Grid>
+         
             {/* Chart */}
             <Grid item xs={12} md={8} lg={9}>
               <Paper className={fixedHeightPaper}>
@@ -194,17 +223,12 @@ const printPdf = () => {
                   <NameAddress />
               </Paper>
             </Grid>
-            {/* Recent Deposits */}
-            <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
-                <Deposits />
-              </Paper>
-            </Grid>
+          
 
             {/* Objective */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
-                  <Objective />
+                  <Portfolio />
               </Paper>
             </Grid>
 

@@ -3,9 +3,6 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import Title from './Title';
-
 
 const useStyles = makeStyles({
   avatar: {
@@ -13,8 +10,8 @@ const useStyles = makeStyles({
   },
   bigAvatar: {
     margin: 0,
-    width: 170,
-    height: 170,
+    width: 200,
+    height: 200,
   },
 });
 
@@ -22,12 +19,9 @@ export default function ImageAvatars() {
   const classes = useStyles();
 
   return (
-    <Grid container justify="center" alignItems="center">
-      {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
-      <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
-      {/* <Typography component="p" variant="subtitle1"> */}
-          <Title>Joebert Fundador</Title>
-      {/* </Typography> */}
+    <Grid container justify="flex-start" alignItems="flex-start">
+      <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} />
+      {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} /> */}
     </Grid>
   );
 }
