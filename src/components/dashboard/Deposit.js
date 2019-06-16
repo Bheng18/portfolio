@@ -13,8 +13,8 @@ const useStyles = makeStyles({
   },
   bigAvatar: {
     margin: 0,
-    width: 170,
-    height: 170,
+    width: 160,
+    height: 160,
   },
 });
 
@@ -22,13 +22,16 @@ export default function ImageAvatars() {
   const classes = useStyles();
 
   return (
-    <Grid container justify="center" alignItems="center">
-      {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
-      <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
-      {/* <Typography component="p" variant="subtitle1"> */}
-          <Title>Joebert Fundador</Title>
-      {/* </Typography> */}
-    </Grid>
+    <div id="aboutMe">
+      <br /><br /><br /><br />
+      <Grid container justify="center" alignItems="center">
+        {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
+        <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
+        {/* <Typography component="p" variant="subtitle1"> */}
+            <Title>Joebert Fundador</Title>
+        {/* </Typography> */}
+      </Grid>
+    </div>
   );
 }
 

@@ -18,6 +18,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './ListItems';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
 // import Chart from './Chart';
 import Logo from './Logo'
 import NameAddress from './NameAddress';
@@ -29,15 +31,17 @@ import SeminarWorkshopAttended from './SeminarsWorkshopAttended';
 import Education from './Education';
 import StudiesCompleted from './StudiesCompleted';
 import Portfolio from './portfolio';
-
+import ContactMe from './ContactMe';
+import FrontEnd from './FrontEndDeveloper';
+ 
 function MadeWithLove() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Built with love my '}
+      {'Copyright ©2019 My Portfolio & '}
       <Link color="inherit" href="http://jca.x10host.com/JCAweb/" target="_blank">
          Thesis Project
       </Link>
-      {' ...'}
+      {' by Joebert Fundador.'}
     </Typography>
   );
 }
@@ -119,7 +123,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   fixedHeight: {
-    height: 240,
+    height: 310,
   },
 }));
 
@@ -134,6 +138,9 @@ export default function Dashboard() {
   };
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
 
+  function ListItemLink(props) {
+    return <ListItem button component="a" {...props} />;
+  }
 // const printPdf = () => {
 //   window.print();
 // }
@@ -141,7 +148,7 @@ export default function Dashboard() {
   return (
     <div className={classes.root}>
       <CssBaseline />
-      <AppBar position="absolute" className={clsx(classes.appBar, open && classes.appBarShift)}>
+      <AppBar position="absolute" color="secondary" className={clsx(classes.appBar, open && classes.appBarShift)}>
         <Toolbar className={classes.toolbar}>
           <IconButton
             edge="start"
@@ -156,25 +163,36 @@ export default function Dashboard() {
             <Logo />
           </Typography>
           <IconButton color="inherit" >
-            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-               Home
-            </Typography>
+            <ListItemLink href="#dashboard">
+              <Typography component="h1" variant="h6" noWrap className={classes.title}>
+                  Home
+              </Typography>
+            </ListItemLink>
           </IconButton>
+
           <IconButton color="inherit" >
-            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-               About Me
-            </Typography>
+            <ListItemLink href="#aboutMe">
+              <Typography component="h1" variant="h6" noWrap className={classes.title}>
+                 About Me
+              </Typography>
+            </ListItemLink>
           </IconButton>
+
           <IconButton color="inherit" >
-            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-               Portfolio
-            </Typography>
+            <ListItemLink href="#portfolio">
+              <Typography component="h1" variant="h6" noWrap className={classes.title}>
+                 Portfolio
+              </Typography>
+            </ListItemLink>
           </IconButton>
+
           <IconButton color="inherit" >
-            <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-               Contact Me
-            </Typography>
-          </IconButton>
+            <ListItemLink href="#contact">
+              <Typography component="h1" variant="h6" noWrap className={classes.title}>
+                 Contact Me
+              </Typography>
+            </ListItemLink>
+            </IconButton>
           {/* <IconButton color="inherit" onClick={printPdf}>
             <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
                Print PDF
@@ -208,7 +226,14 @@ export default function Dashboard() {
         <div className={classes.appBarSpacer} />
         <Container maxWidth="lg" className={classes.container} >
           <Grid container spacing={2}>
-         
+
+            {/* Objective */}
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                  <FrontEnd />
+              </Paper>
+            </Grid>
+
            {/* Recent Deposits */}
            <Grid item xs={12} md={4} lg={3}>
               <Paper className={fixedHeightPaper}>
@@ -221,14 +246,6 @@ export default function Dashboard() {
               <Paper className={fixedHeightPaper}>
                 {/* <Chart /> */}
                   <NameAddress />
-              </Paper>
-            </Grid>
-          
-
-            {/* Objective */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                  <Portfolio />
               </Paper>
             </Grid>
 
@@ -267,12 +284,27 @@ export default function Dashboard() {
               </Paper>
             </Grid>
 
+             {/* Objective */}
+             <Grid item xs={12} >
+              <Paper className={classes.paper} >
+                  <Portfolio />
+              </Paper>
+            </Grid>
+
             {/* Recent Orders */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <Orders />
               </Paper>
             </Grid>
+
+          {/* COntact Me */}
+           <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <ContactMe />
+              </Paper>
+            </Grid>
+
           </Grid>
         </Container>
         <MadeWithLove />

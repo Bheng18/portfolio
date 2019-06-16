@@ -7,6 +7,7 @@ import Box from '@material-ui/core/Box';
 import Title from './Title';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
+import Divider from '@material-ui/core/Divider'
 
 const useStyles = makeStyles({
   avatar: {
@@ -26,8 +27,11 @@ export default function ImageAvatars() {
   const classes = useStyles();
 
   return (
+    <div id="portfolio">
+      <br /><br /><br /><br />
     <React.Fragment>
             <Title>Portfolio</Title>
+            <Divider />
               <Typography component="p" variant="h6" align="center">
                  Click the image to see the project 
               </Typography>
@@ -81,6 +85,7 @@ export default function ImageAvatars() {
           </Grid>
                  
     </React.Fragment>
+    </div>
   );
 }
 
