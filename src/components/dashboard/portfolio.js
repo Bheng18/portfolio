@@ -49,7 +49,7 @@ export default function ImageAvatars() {
               </Typography>
             </Box>  
           </Link>
-          <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+          <Link href="https://murmuring-journey-51985.herokuapp.com/i2i/itemList/" target="_blank">
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
               <Typography color="inherit" className={classes.depositContext} align="center">
                   MERN-CRUD
@@ -60,7 +60,7 @@ export default function ImageAvatars() {
               </Typography>
             </Box>
           </Link>
-          <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+          <Link href="#/" target="_blank">
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Angular-REST-API-CRUD
@@ -71,7 +71,7 @@ export default function ImageAvatars() {
               </Typography> 
             </Box>
           </Link>
-          <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+          <Link href="#/" target="_blank">
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Spring-REST-API-CRUD
