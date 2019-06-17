@@ -21,8 +21,8 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Works Experience</Title>
       <Divider />
-      <Typography component="p" variant="subtitle1">
-         <u>UnionBank of the Philippines</u>
+      <Typography color="primary" component="p" variant="subtitle1">
+         UnionBank of the Philippines
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
@@ -31,8 +31,9 @@ export default function Deposits() {
                 <li>Date: - Feb. 12, 2019 – April 15, 2019 </li>
           </ul>
       </Typography>
-      <Typography component="p" variant="subtitle1">
-          <u>Emerio Philippines Inc.</u>
+      <Divider />
+      <Typography color="primary" component="p" variant="subtitle1">
+          Emerio Philippines Inc.
       </Typography>
       <Typography component="p" variant="subtitle2">
             <ul>

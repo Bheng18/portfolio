@@ -11,6 +11,10 @@ const useStyles = makeStyles({
   depositContext: {
     flex: 1,
   },
+  // subtitle1Color: {
+  //   backgroundColor: '#1a237e',
+  //   color: '#FFFFFF',
+  // },
 });
 
 export default function Deposits() {
@@ -19,8 +23,8 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Skills and Qualifications</Title>
       <Divider />
-      <Typography component="p" variant="subtitle1">
-         <u>Web Development</u>
+      <Typography color="primary" component="p" variant="h6">
+         Web Development
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ol type="A">
@@ -38,8 +42,9 @@ export default function Deposits() {
                 </ul>
           </ol>
       </Typography>
-      <Typography component="p" variant="subtitle1">
-          <u>Software Development</u>
+      <Divider />
+      <Typography color="primary" component="p" variant="h6">
+          Software Development
       </Typography>
       <Typography component="p" variant="subtitle2">
             <ul>
@@ -47,16 +52,18 @@ export default function Deposits() {
                 <li>Agile Methodology(SCRUM framework), Git, GitHub</li>
             </ul>
       </Typography>
-      <Typography component="p" variant="subtitle1">
-          <u>Mobile Development</u>
+      <Divider />
+      <Typography color="primary" component="p" variant="h6">
+          Mobile Development
       </Typography>
       <Typography component="p" variant="subtitle2">
             <ul>
                 <li>Google Flutter(Android Studio, IOS & SQLite)</li>
             </ul>
       </Typography>
-      <Typography component="p" variant="subtitle1">
-          <u>Soft Skills</u>
+      <Divider />
+      <Typography color="primary" component="p" variant="h6">
+          Soft Skills    
       </Typography>
       <Typography component="p" variant="subtitle2">
             <ul>

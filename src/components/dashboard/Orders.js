@@ -9,6 +9,7 @@ import TableCell from '@material-ui/core/TableCell';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Title from './Title';
+import { Divider } from '@material-ui/core';
 
 // Generate Order Data
 function createData(id, name, frontEnd, backEnd, database, functionality, githublink) {
@@ -40,14 +41,15 @@ export default function Orders() {
       <br /><br /><br /><br />
     <React.Fragment>
       <Title>Self Study Project - CRUD Operation</Title>
+      <Divider />
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Name</TableCell>
-            <TableCell>Front-End</TableCell>
-            <TableCell>Back-End</TableCell>
-            <TableCell>Database</TableCell>
-            <TableCell>Functionality</TableCell>
+            <TableCell style={{color: '#3f51b5'}}>Name</TableCell>
+            <TableCell style={{color: '#3f51b5'}}>Front-End</TableCell>
+            <TableCell style={{color: '#3f51b5'}}>Back-End</TableCell>
+            <TableCell style={{color: '#3f51b5'}}>Database</TableCell>
+            <TableCell style={{color: '#3f51b5'}}>Functionality</TableCell>
             <TableCell>GitHub Link</TableCell>
             {/* <TableCell align="right">GitHub Link</TableCell> */}
           </TableRow>

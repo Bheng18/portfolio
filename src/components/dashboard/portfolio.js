@@ -32,7 +32,7 @@ export default function ImageAvatars() {
     <React.Fragment>
             <Title>Portfolio</Title>
             <Divider />
-              <Typography component="p" variant="h6" align="center">
+              <Typography component="p" variant="subtitle2" align="center">
                  Click the image to see the project 
               </Typography>
               

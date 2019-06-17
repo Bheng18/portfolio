@@ -27,9 +27,9 @@ export default function ImageAvatars() {
       <Grid container justify="center" alignItems="center">
         {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
         <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
-        {/* <Typography component="p" variant="subtitle1"> */}
-            <Title>Joebert Fundador</Title>
-        {/* </Typography> */}
+        <Typography color="primary" component="p" variant="subtitle1">
+                Joebert Fundador
+        </Typography>
       </Grid>
     </div>
   );

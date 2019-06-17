@@ -22,8 +22,8 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Education</Title>
       <Divider />
-      <Typography component="p" variant="subtitle1">
-         <u>Bachelor of Science in Computer Science</u>
+      <Typography color="primary" component="p" variant="subtitle1">
+          Bachelor of Science in Computer Science
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>

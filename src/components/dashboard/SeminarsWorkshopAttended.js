@@ -19,8 +19,8 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Seminar & Workshops Attended</Title>
       <Divider />
-      <Typography component="p" variant="subtitle1">
-         <u>Blockchain Training</u>
+      <Typography color="primary" component="p" variant="subtitle1">
+         Blockchain Training
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
@@ -31,8 +31,9 @@ export default function Deposits() {
                 <li>Location: - Onyx st. Cor. Meralco Ave. Ortigas, Pasig City</li>
           </ul>
       </Typography>
-      <Typography component="p" variant="subtitle1">
-          <u>SAP ABAP Bootcamp (Systems Applications Products -  Advanced Business Application Programming)</u>
+      <Divider />
+      <Typography color="primary" component="p" variant="subtitle1">
+          SAP ABAP Bootcamp (Systems Applications Products -  Advanced Business Application Programming)
       </Typography>
       <Typography component="p" variant="subtitle2">
             <ul>
@@ -42,7 +43,8 @@ export default function Deposits() {
                 <li>Location: - Accenture Gateway 2, Cubao Center, Quezon City</li>
             </ul>
       </Typography>
-      <Typography component="p" variant="subtitle1">
+      <Divider />
+      <Typography color="primary" component="p" variant="subtitle1">
          <u>Web Development - Apache MySQL PHP (XAMPP) Object Oriented in PHP</u>
       </Typography>
       <Typography component="p" variant="subtitle2">

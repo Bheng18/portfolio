@@ -36,13 +36,13 @@ export default function ImageAvatars() {
             <Title>Contact Me</Title>
             <Grid item xs={12}>
                 <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-                    <Typography component="p" variant="subtitle2">
+                    <Typography color="primary" component="p" variant="subtitle2">
                         <MyLocation /> 8E Mangga Street, Block 37 Addition Hills, Mandaluyong City 
                     </Typography>
-                    <Typography component="p" variant="h6">
+                    <Typography color="primary" component="p" variant="h6">
                        <Call />{'    '}+63 917 6932 537
                     </Typography>
-                    <Typography component="p" variant="h6">
+                    <Typography color="primary" component="p" variant="h6">
                        <Email />{'   '} joebert.fundador@gmail.com
                     </Typography>
                     

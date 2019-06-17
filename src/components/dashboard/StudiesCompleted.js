@@ -19,8 +19,8 @@ export default function Deposits() {
     <React.Fragment>
       <Title>Studies Completed</Title>
       <Divider />
-      <Typography component="p" variant="subtitle1">
-         <u>Thesis Project: - Online Ordering and Billing with Inventory System</u>
+      <Typography color="primary" component="p" variant="subtitle1">
+         Thesis Project: - Online Ordering and Billing with Inventory System
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
@@ -32,9 +32,9 @@ export default function Deposits() {
             <li>AdminSide: - <a href="http://jca.x10host.com/JCAweb/admin/" target="_blank">http://jca.x10host.com/JCAweb/admin/</a></li>
           </ul>
       </Typography>
-
-      <Typography component="p" variant="subtitle1">
-         <u>TESDA case study Project: - Online Payroll System</u>
+      <Divider />
+      <Typography color="primary" component="p" variant="subtitle1">
+         TESDA case study Project: - Online Payroll System
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
