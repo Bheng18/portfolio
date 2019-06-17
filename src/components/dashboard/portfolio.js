@@ -49,7 +49,7 @@ export default function ImageAvatars() {
               </Typography>
             </Box>  
           </Link>
-          <Link href="https://murmuring-journey-51985.herokuapp.com/i2i/itemList/" target="_blank">
+          <Link href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
               <Typography color="inherit" className={classes.depositContext} align="center">
                   MERN-CRUD
