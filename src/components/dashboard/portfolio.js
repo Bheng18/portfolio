@@ -7,7 +7,8 @@ import Box from '@material-ui/core/Box';
 import Title from './Title';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
-import Divider from '@material-ui/core/Divider'
+import Divider from '@material-ui/core/Divider';
+import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles({
   avatar: {
@@ -18,7 +19,10 @@ const useStyles = makeStyles({
     width: 200,
     height: 200,
   },
- 
+  media: {
+    height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
 });
 
 
@@ -43,7 +47,12 @@ export default function ImageAvatars() {
               <Typography color="inherit" className={classes.depositContext} align="center">
                  Thesis Project
               </Typography>
-              <Avatar alt="Remy Sharp" src="/images/thesisProject.PNG" className={classes.bigAvatar}  />
+              <CardMedia
+                  className={classes.bigAvatar}
+                  image="/images/thesisProject.PNG"
+                  title="Paella dish"
+                />
+              {/* <Avatar alt="Remy Sharp" src="/images/thesisProject.PNG" className={classes.bigAvatar}  /> */}
               <Typography color="inherit" className={classes.depositContext} align="center">
                  View 
               </Typography>
@@ -65,7 +74,12 @@ export default function ImageAvatars() {
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Angular-REST-API-CRUD
                 </Typography>
-              <Avatar alt="Remy Sharp" src="/images/angular-typescript.PNG" className={classes.bigAvatar} />
+                <CardMedia
+                  className={classes.bigAvatar}
+                  image="/images/angular-typescript.PNG"
+                  title="Paella dish"
+                />
+              {/* <Avatar alt="Remy Sharp" src="/images/angular-typescript.PNG" className={classes.bigAvatar} /> */}
               <Typography color="inherit" className={classes.depositContext} align="center">
                  View 
               </Typography> 
