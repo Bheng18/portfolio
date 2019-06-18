@@ -28,7 +28,7 @@ export default function Deposits() {
           <ul>
                 <li>Position: - Blockchain Cadet</li>
                 <li>Tasks: - Frond-End Developer(React.js & Redux, SCRUM team)</li>
-                <li>Date: - Feb. 12, 2019 – April 15, 2019 </li>
+                <li>Date: - October 15, 2018 – April 15, 2019 </li>
           </ul>
       </Typography>
       <Divider />

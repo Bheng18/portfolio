@@ -57,7 +57,8 @@ export default function ImageAvatars() {
               <Typography color="primary" className={classes.depositContext} align="center">
                  My Location
               </Typography>
-              <img alt="Remy Sharp" src="/images/locationkoZoom200.PNG" className={classes.paper}  />
+              {/* <img alt="Remy Sharp" src="/images/locationkoZoom200.PNG" className={classes.paper}  /> */}
+                 <GoogleMap />
             </Box>  
           </Grid>
 

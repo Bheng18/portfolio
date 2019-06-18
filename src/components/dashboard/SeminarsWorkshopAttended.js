@@ -45,7 +45,7 @@ export default function Deposits() {
       </Typography>
       <Divider />
       <Typography color="primary" component="p" variant="subtitle1">
-         <u>Web Development - Apache MySQL PHP (XAMPP) Object Oriented in PHP</u>
+         Web Development - Apache MySQL PHP (XAMPP) Object Oriented in PHP
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
