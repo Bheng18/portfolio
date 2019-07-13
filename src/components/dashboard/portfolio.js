@@ -125,7 +125,12 @@ export default function ImageAvatars() {
               <Typography color="inherit" className={classes.depositContext} align="center">
                   SpringBoot-WebFlux
                 </Typography>
-              <Avatar alt="Remy Sharp" src="/images/webflux.PNG" className={classes.bigAvatar} />
+                <CardMedia
+                  className={classes.bigAvatar}
+                  image="/images/webflux.PNG"
+                  title="Paella dish"
+                />
+              {/* <Avatar alt="Remy Sharp" src="/images/webflux.PNG" className={classes.bigAvatar} /> */}
               <Typography color="inherit" className={classes.depositContext} align="center">
                  View Online
               </Typography> 
