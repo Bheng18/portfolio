@@ -59,7 +59,7 @@ export default function ImageAvatars() {
             </Link>
             <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
                 <Typography color="inherit" className={classes.depositContext} align="center">
-                  View Github 
+                  (None Github) 
                 </Typography>
             </Link>
           </Box>  
@@ -74,7 +74,7 @@ export default function ImageAvatars() {
                   View Online
                 </Typography>
             </Link>
-            <Link href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
+            <Link href="https://github.com/Bheng18/MERN-CRUD" target="_blank">
                 <Typography color="inherit" className={classes.depositContext} align="center">
                   View Github 
                 </Typography>
