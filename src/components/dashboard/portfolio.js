@@ -16,8 +16,8 @@ const useStyles = makeStyles({
   },
   bigAvatar: {
     margin: 0,
-    width: 200,
-    height: 200,
+    width: 180,
+    height: 150,
   },
   media: {
     height: 0,
@@ -42,35 +42,47 @@ export default function ImageAvatars() {
               
     <Grid container justify="space-around" alignItems="center">
           {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
-          <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
-            <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-              <Typography color="inherit" className={classes.depositContext} align="center">
-                 Thesis Project
-              </Typography>
-              <CardMedia
-                  className={classes.bigAvatar}
-                  image="/images/thesisProject.PNG"
-                  title="Paella dish"
-                />
-              {/* <Avatar alt="Remy Sharp" src="/images/thesisProject.PNG" className={classes.bigAvatar}  /> */}
-              <Typography color="inherit" className={classes.depositContext} align="center">
-                 View 
-              </Typography>
-            </Box>  
-          </Link>
-          <Link href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
-            <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-              <Typography color="inherit" className={classes.depositContext} align="center">
-                  MERN-CRUD
+          <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
+            <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+                <Typography color="inherit" className={classes.depositContext} align="center">
+                  Thesis Project
                 </Typography>
-              <Avatar alt="Remy Sharp" src="/images/mern.PNG" className={classes.bigAvatar} />
-              <Typography color="inherit" className={classes.depositContext} align="center">
-                 View 
-              </Typography>
-            </Box>
-          </Link>
-          <Link href="https://angular-jf.herokuapp.com/employeeList" target="_blank">
-            <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
+                <CardMedia
+                    className={classes.bigAvatar}
+                    image="/images/thesisProject.PNG"
+                    title="Paella dish"
+                  />
+                {/* <Avatar alt="Remy Sharp" src="/images/thesisProject.PNG" className={classes.bigAvatar}  /> */}
+                <Typography color="inherit" className={classes.depositContext} align="center">
+                  View Online
+                </Typography>
+            </Link>
+            <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+                <Typography color="inherit" className={classes.depositContext} align="center">
+                  View Github 
+                </Typography>
+            </Link>
+          </Box>  
+
+          <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
+            <Link href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
+                <Typography color="inherit" className={classes.depositContext} align="center">
+                    MERN-CRUD
+                  </Typography>
+                <Avatar alt="Remy Sharp" src="/images/mern.PNG" className={classes.bigAvatar} />
+                <Typography color="inherit" className={classes.depositContext} align="center">
+                  View Online
+                </Typography>
+            </Link>
+            <Link href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
+                <Typography color="inherit" className={classes.depositContext} align="center">
+                  View Github 
+                </Typography>
+            </Link>
+          </Box>
+
+          <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
+              <Link href="https://angular-jf.herokuapp.com/employeeList" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Angular-REST-API-CRUD
                 </Typography>
@@ -81,21 +93,50 @@ export default function ImageAvatars() {
                 />
               {/* <Avatar alt="Remy Sharp" src="/images/angular-typescript.PNG" className={classes.bigAvatar} /> */}
               <Typography color="inherit" className={classes.depositContext} align="center">
-                 View 
+                 View Online
               </Typography> 
+              </Link>
+              <Link href="https://github.com/Bheng18/Angular7-CRUD-REST-API-front-end" target="_blank">
+                <Typography color="primary" className={classes.depositContext} align="center">
+                  View Github
+                </Typography>
+              </Link>
             </Box>
-          </Link>
-          <Link href="https://springboot-jf.herokuapp.com/api/employeeList" target="_blank">
+
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
+              <Link href="https://springboot-jf.herokuapp.com/api/employeeList" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Spring-REST-API-CRUD
                 </Typography>
               <Avatar alt="Remy Sharp" src="/images/springJpaMysql.PNG" className={classes.bigAvatar} />
               <Typography color="inherit" className={classes.depositContext} align="center">
-                 View 
+                 View Online
               </Typography> 
+              </Link>
+              <Link href="https://github.com/Bheng18/springBoot-JPA-Hibernate-MySQL-REST-API-CRUD-back-end" target="_blank">
+              <Typography color="inherit" className={classes.depositContext} align="center">
+                 View Github
+              </Typography>
+              </Link>
             </Box>
-          </Link>
+
+            <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
+              <Link href="https://reactive-angular-springboot-webflux2019.netlify.com/" target="_blank">
+              <Typography color="inherit" className={classes.depositContext} align="center">
+                  SpringBoot-WebFlux
+                </Typography>
+              <Avatar alt="Remy Sharp" src="/images/webflux.PNG" className={classes.bigAvatar} />
+              <Typography color="inherit" className={classes.depositContext} align="center">
+                 View Online
+              </Typography> 
+              </Link>
+              <Link href="https://github.com/Bheng18/SpringBoot-ReactiveProgramming-Webflux" target="_blank">
+              <Typography color="inherit" className={classes.depositContext} align="center">
+                 View Github
+              </Typography>
+              </Link>
+            </Box>
+
           </Grid>
                  
     </React.Fragment>
