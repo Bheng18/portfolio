@@ -1,7 +1,7 @@
 /* eslint-disable no-script-url */
 
 import React from 'react';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
@@ -24,11 +24,10 @@ export default function Deposits() {
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
-                <li>Company: - UnionBank of the Philippines</li>
-                <li>Position: - Blockchain Cadet</li>
-                <li>Learnings: - Ethereum, Hyperledger, Corda and NEM Blockchain, React.js, Vue.js and Node.js</li>
-                <li>Training Period: - October 15, 2018 – April 15, 2019</li>
-                <li>Location: - Onyx st. Cor. Meralco Ave. Ortigas, Pasig City</li>
+                <li><strong>UNIONBANK of the PHILIPPINES</strong></li>
+                <li>Blockchain Cadet / Front-End Developer</li>
+                <li>October 2018 – April 2019</li>
+                <li>UnionBank Plaza Ortigas, Pasig City</li>
           </ul>
       </Typography>
       <Divider />
@@ -37,10 +36,10 @@ export default function Deposits() {
       </Typography>
       <Typography component="p" variant="subtitle2">
             <ul>
-                <li>Company:  -  Accenture Philippines</li>
-                <li>Position: - Associate Software Engineer</li>
-                <li>Training Period: - August 14, 2017 to Sept. 14, 2017</li>
-                <li>Location: - Accenture Gateway 2, Cubao Center, Quezon City</li>
+                <li><strong>ACCENTURE PHILIPPINES</strong></li>
+                <li>Associate Software Engineer</li>
+                <li>August 2017 - September 2017</li>
+                <li>Accenture Gateway 2, Cubao Center, Quezon City</li>
             </ul>
       </Typography>
       <Divider />
@@ -49,11 +48,10 @@ export default function Deposits() {
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
-                <li>Company: - American TESOL, Institute Philippines, Inc. TESDA Accredited</li>
-                <li>Training for Work Scholarship Program (TWSP) in TESDA</li>
-                <li>Learnings: - Created an online payroll system using PHP scripting language in Object Oriented Programming paradigm</li>
-                <li>Training period: Oct. 27, 2017 – Nov. 17, 2017</li>
-                <li>Location: - 707 Shaw Blvd, Pasig City</li>
+                <li>American TESOL, Institute Philippines, Inc. - TESDA Accredited</li>
+                <li>TESDA Trainee / Web Developer</li>
+                <li>October 2017 – November 2017</li>
+                <li>Kapitolyo Shaw Blvd, Pasig City</li>
           </ul>
       </Typography>
       

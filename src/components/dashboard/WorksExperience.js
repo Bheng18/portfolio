@@ -1,7 +1,7 @@
 /* eslint-disable no-script-url */
 
 import React from 'react';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
@@ -26,9 +26,14 @@ export default function Deposits() {
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
-                <li>Position: - Blockchain Cadet</li>
-                <li>Tasks: - Frond-End Developer(React.js & Redux, SCRUM team)</li>
-                <li>Date: - October 15, 2018 – April 15, 2019 </li>
+                <li>Position: - Blockchain Cadet / Front-End Developer</li>
+                <li>October 2018 – April 2019 </li>
+                <li>Responsibilities:
+                  <ul>
+                    <li>Trained as Blockchain Cadet including Agile Methodology(SCRUM) and Git / GitHub.</li>  
+                    <li>Developed frontend services using React.js with Redux framework in Marketing Automation Module. Created Marketing Officer Contacts and Segments management.</li>
+                  </ul>
+                </li>
           </ul>
       </Typography>
       <Divider />
@@ -38,8 +43,13 @@ export default function Deposits() {
       <Typography component="p" variant="subtitle2">
             <ul>
                 <li>Position: - Associate Software Engineer</li>
-                <li>Technology: - SAP ABAP (Object Oriented and MVC)</li>
-                <li>Date: - Sept. 14, 2017 - Feb. 28, 2018</li>
+                <li>August 2017 - February 2018</li>
+                <li>Responsibilities:
+                  <ul>
+                    <li>1-month SAP ABAP trainee under Accenture Philippines</li>
+                    <li>Developed periodic Ledger using SAP ABAP programming language.</li>
+                  </ul>
+                </li>
             </ul>
       </Typography>
       

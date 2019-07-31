@@ -19,6 +19,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './ListItems';
 import ListItem from '@material-ui/core/ListItem';
+// import Rating from '@material-ui/lab/Rating';
 // import ListItemIcon from '@material-ui/core/ListItemIcon';
 // import Chart from './Chart';
 import Logo from './Logo'
@@ -126,7 +127,7 @@ const useStyles = makeStyles(theme => ({
     flexDirection: 'column',
   },
   fixedHeight: {
-    height: 310,
+    // height: 550,
   },
 }));
 
@@ -223,7 +224,7 @@ export default function Dashboard() {
         <Divider />
         <List>{mainListItems}</List>
         <Divider />
-        <List>{secondaryListItems}</List>
+        {/* <List>{secondaryListItems}</List> */}
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
@@ -238,24 +239,25 @@ export default function Dashboard() {
             </Grid>
 
            {/* Recent Deposits */}
-           <Grid item xs={12} md={4} lg={3}>
-              <Paper className={fixedHeightPaper}>
+           <Grid item xs={12} md={3} lg={3}>
+              {/* <Paper className={fixedHeightPaper}> */}
                 <Deposits />
-              </Paper>
+              {/* </Paper> */}
             </Grid>
          
             {/* Chart */}
-            <Grid item xs={12} md={8} lg={9}>
-              <Paper className={fixedHeightPaper}>
+            <Grid item xs={12} md={9} lg={9}>
+              {/* <Paper className={fixedHeightPaper}> */}
                 {/* <Chart /> */}
                   <NameAddress />
-              </Paper>
+              {/* </Paper> */}
             </Grid>
 
             {/* Skills Qualifications */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
                 <SkillsQualifications />
+                {/* <Rating value={value} readOnly /> */}
               </Paper>
             </Grid>
 
@@ -266,6 +268,13 @@ export default function Dashboard() {
               </Paper>
             </Grid>
 
+            {/* Education */}
+            <Grid item xs={12}>
+              <Paper className={classes.paper}>
+                <Education />
+              </Paper>
+            </Grid>
+
             {/* seminar and workshop attended */}
             <Grid item xs={12}>
               <Paper className={classes.paper}>
@@ -273,12 +282,6 @@ export default function Dashboard() {
               </Paper>
             </Grid>
 
-            {/* Education */}
-            <Grid item xs={12}>
-              <Paper className={classes.paper}>
-                <Education />
-              </Paper>
-            </Grid>
 
             {/* Studies Completed */}
             <Grid item xs={12}>

@@ -26,7 +26,6 @@ const useStyles = makeStyles({
 });
 
 
-
 export default function ImageAvatars() {
   const classes = useStyles();
 

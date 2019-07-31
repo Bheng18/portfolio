@@ -25,11 +25,11 @@ export default function ImageAvatars() {
     <div id="aboutMe">
       <br /><br /><br /><br />
       <Grid container justify="center" alignItems="center">
-        {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
-        <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
-        <Typography color="primary" component="p" variant="subtitle1">
-                Joebert Fundador
-        </Typography>
+          {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
+          <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
+          <Typography color="primary" component="p" variant="subtitle1">
+                  Joebert Fundador
+          </Typography>
       </Grid>
     </div>
   );

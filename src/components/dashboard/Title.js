@@ -17,13 +17,13 @@ const useStyles = makeStyles({
 export default function Title(props) {
   const classes = useStyles();
   return (
-    <Typography component="h2" variant="h6" className={classes.titleColor} align="center"> 
+    <Typography component="h2" variant="h6" className={classes.titleColor} align="left" gutterBottom > 
       {props.children}
     </Typography>
   );
-}
-    {/* gutterBottom */}
 
+    {/* gutterBottom */}
+}
 Title.propTypes = {
-  children: PropTypes.node,
+    children: PropTypes.node,
 };

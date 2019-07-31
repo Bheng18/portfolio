@@ -1,15 +1,21 @@
 /* eslint-disable no-script-url */
 
 import React from 'react';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Title from './Title';
 import { Divider } from '@material-ui/core';
+import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
+// import Rating from '@material-ui/lab/Rating';
 
 const useStyles = makeStyles({
   depositContext: {
     flex: 1,
+  },
+  gridAlign: {
+    justifyContent: 'start',
   },
   // subtitle1Color: {
   //   backgroundColor: '#1a237e',
@@ -18,12 +24,49 @@ const useStyles = makeStyles({
 });
 
 export default function Deposits() {
+  // const [value, setValue] = React.useState(2);
   const classes = useStyles();
   return (
     <React.Fragment>
-      <Title>Skills and Qualifications</Title>
-      <Divider />
-      <Typography color="primary" component="p" variant="h6">
+      <Title>Technical Skills</Title>
+       <Divider />
+        <Grid container className={classes.gridAlign}>
+        {/* <Box component="fieldset" mb={3} borderColor="transparent">
+          <Typography component="legend">Read only</Typography>
+          <Rating value={value} readOnly />
+        </Box> */}
+          <Box bgcolor="background.paper" m={1} border={0} boxShadow={0} >
+            <Typography component="p" variant="subtitle2">
+              <ul>
+                  <li>Javascript</li>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Typescript / ES6</li>
+                  <li>React.js with Redux</li>
+                  <li>Angular4-7</li>
+                  <li>Material UI / Bootstrap / CSS</li>
+                  <li>Object Oriented Programming</li>
+              </ul>
+              {/* <Rating value={value} readOnly /> */}
+            </Typography>      
+          </Box>
+          <Box bgcolor="background.paper" m={1} border={0} boxShadow={0} >
+            <Typography component="p" variant="subtitle2">
+              <ul>
+                  <li>REST API</li>
+                  <li>Agile Methodology (SCRUM)</li>
+                  <li>Git / Github</li>
+                  <li>Java EE</li>
+                  <li>JPA-Hibernate</li>
+                  <li>Spring MVC / SpringBoot WebFlux</li>
+                  <li>PHP</li>
+                  <li>MySQL / MongoDb</li>
+              </ul>
+            </Typography>      
+          </Box> 
+        </Grid>
+       {/* <Divider /> */}
+      {/* <Typography color="primary" component="p" variant="h6">
          Web Development
       </Typography>
       <Typography component="p" variant="subtitle2">
@@ -60,7 +103,7 @@ export default function Deposits() {
             <ul>
                 <li>Google Flutter(Android Studio, IOS & SQLite)</li>
             </ul>
-      </Typography>
+      </Typography> 
       <Divider />
       <Typography color="primary" component="p" variant="h6">
           Soft Skills    
@@ -69,7 +112,7 @@ export default function Deposits() {
             <ul>
                 <li>Good Communication skills, Interpersonal Skills, Positive Attitude, Responsible, Time  Management & TeamWork</li>
             </ul>
-      </Typography>
+      </Typography> */}
     </React.Fragment>
   );
 }
