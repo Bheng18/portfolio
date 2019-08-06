@@ -48,7 +48,7 @@ export default function Deposits() {
       </Typography>
       <Typography component="p" variant="subtitle2">
           <ul>
-                <li>American TESOL, Institute Philippines, Inc. - TESDA Accredited</li>
+                <li><strong>American TESOL, Institute Philippines, Inc.</strong> - TESDA Accredited</li>
                 <li>TESDA Trainee / Web Developer</li>
                 <li>October 2017 – November 2017</li>
                 <li>Kapitolyo Shaw Blvd, Pasig City</li>

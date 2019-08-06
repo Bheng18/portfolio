@@ -1,22 +1,23 @@
 // /* eslint-disable no-script-url */
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import styled from 'styled-components';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import Title from './Title';
 import Typography from '@material-ui/core/Typography';
-import Link from '@material-ui/core/Link';
+// import Link from '@material-ui/core/Link';
 import Divider from '@material-ui/core/Divider';
 import CardMedia from '@material-ui/core/CardMedia';
 
 const useStyles = makeStyles({
   avatar: {
-    margin: 10,
+    margin: 5,
   },
   bigAvatar: {
     margin: 0,
-    width: 180,
+    width: 165,
     height: 150,
   },
   media: {
@@ -25,6 +26,20 @@ const useStyles = makeStyles({
   },
 });
 
+const Button = styled.button`
+  color: #2b1973;
+  font-size: 1em;
+  margin: 0.5em;
+  border: 2px solid #2b1973;
+  border-radius: 3px;
+  display: block;
+  text-decoration: none;
+  &:hover {
+    background: #2b1973;
+    color: white;
+  }
+`;
+//  padding: 0.25em 1em; display: inline-block;
 
 export default function ImageAvatars() {
   const classes = useStyles();
@@ -42,7 +57,7 @@ export default function ImageAvatars() {
     <Grid container justify="space-around" alignItems="center">
           {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
           <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-            <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+            <Button as="a" href="http://jca.x10host.com/JCAweb/" target="_blank">
                 <Typography color="inherit" className={classes.depositContext} align="center">
                   Thesis Project
                 </Typography>
@@ -53,74 +68,74 @@ export default function ImageAvatars() {
                   />
                 {/* <Avatar alt="Remy Sharp" src="/images/thesisProject.PNG" className={classes.bigAvatar}  /> */}
                 <Typography color="inherit" className={classes.depositContext} align="center">
-                  View Online
+                  Live Demo
                 </Typography>
-            </Link>
-            <Link href="http://jca.x10host.com/JCAweb/" target="_blank">
+            </Button>
+            <Button as="a" href="http://jca.x10host.com/JCAweb/" target="_blank">
                 <Typography color="inherit" className={classes.depositContext} align="center">
                   (None Github) 
                 </Typography>
-            </Link>
+            </Button>
           </Box>  
 
           <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-            <Link href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
+            <Button as="a" href="https://mern-crud-jf.herokuapp.com/i2i/itemList/" target="_blank">
                 <Typography color="inherit" className={classes.depositContext} align="center">
                     MERN-CRUD
                   </Typography>
                 <Avatar alt="Remy Sharp" src="/images/mern.PNG" className={classes.bigAvatar} />
                 <Typography color="inherit" className={classes.depositContext} align="center">
-                  View Online
+                  Live Demo
                 </Typography>
-            </Link>
-            <Link href="https://github.com/Bheng18/MERN-CRUD" target="_blank">
+            </Button>
+            <Button as="a" href="https://github.com/Bheng18/MERN-CRUD" target="_blank">
                 <Typography color="inherit" className={classes.depositContext} align="center">
                   View Github 
                 </Typography>
-            </Link>
+            </Button>
           </Box>
 
           <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-              <Link href="https://angular-jf.herokuapp.com/employeeList" target="_blank">
+              <Button as="a" href="https://angular-jf.herokuapp.com/employeeList" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Angular-REST-API-CRUD
                 </Typography>
-                <CardMedia
+                {/* <CardMedia
                   className={classes.bigAvatar}
                   image="/images/angular-typescript.PNG"
                   title="Paella dish"
-                />
-              {/* <Avatar alt="Remy Sharp" src="/images/angular-typescript.PNG" className={classes.bigAvatar} /> */}
+                /> */}
+              <Avatar alt="Remy Sharp" src="/images/angular-typescript.PNG" className={classes.bigAvatar} />
               <Typography color="inherit" className={classes.depositContext} align="center">
-                 View Online
+                  Live Demo
               </Typography> 
-              </Link>
-              <Link href="https://github.com/Bheng18/Angular7-CRUD-REST-API-front-end" target="_blank">
-                <Typography color="primary" className={classes.depositContext} align="center">
+              </Button>
+              <Button as="a" href="https://github.com/Bheng18/Angular7-CRUD-REST-API-front-end" target="_blank">
+                <Typography color="inherit" className={classes.depositContext} align="center">
                   View Github
                 </Typography>
-              </Link>
+              </Button>
             </Box>
 
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-              <Link href="https://springboot-jf.herokuapp.com/api/employeeList" target="_blank">
+              <Button as="a" href="https://springboot-jf.herokuapp.com/api/employeeList" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                   Spring-REST-API-CRUD
                 </Typography>
               <Avatar alt="Remy Sharp" src="/images/springJpaMysql.PNG" className={classes.bigAvatar} />
               <Typography color="inherit" className={classes.depositContext} align="center">
-                 View Online
+                  Live Demo
               </Typography> 
-              </Link>
-              <Link href="https://github.com/Bheng18/springBoot-JPA-Hibernate-MySQL-REST-API-CRUD-back-end" target="_blank">
+              </Button>
+              <Button as="a" href="https://github.com/Bheng18/springBoot-JPA-Hibernate-MySQL-REST-API-CRUD-back-end" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                  View Github
               </Typography>
-              </Link>
+              </Button>
             </Box>
 
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-              <Link href="https://reactive-angular-springboot-webflux2019.netlify.com/" target="_blank">
+              <Button as="a" href="https://reactive-angular-springboot-webflux2019.netlify.com/" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                   SpringBoot-WebFlux
                 </Typography>
@@ -131,14 +146,14 @@ export default function ImageAvatars() {
                 />
               {/* <Avatar alt="Remy Sharp" src="/images/webflux.PNG" className={classes.bigAvatar} /> */}
               <Typography color="inherit" className={classes.depositContext} align="center">
-                 View Online
+                  Live Demo
               </Typography> 
-              </Link>
-              <Link href="https://github.com/Bheng18/SpringBoot-ReactiveProgramming-Webflux" target="_blank">
+              </Button>
+              <Button as="a" href="https://github.com/Bheng18/SpringBoot-ReactiveProgramming-Webflux" target="_blank">
               <Typography color="inherit" className={classes.depositContext} align="center">
                  View Github
               </Typography>
-              </Link>
+              </Button>
             </Box>
 
           </Grid>
@@ -152,7 +167,7 @@ export default function ImageAvatars() {
 
 
 // import React from 'react';
-// import Link from '@material-ui/core/Link';
+// import Button as="a" from '@material-ui/core/Link';
 // import { makeStyles } from '@material-ui/core/styles';
 // import Typography from '@material-ui/core/Typography';
 // import Title from './Title';
