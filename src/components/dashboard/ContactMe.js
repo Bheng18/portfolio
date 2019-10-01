@@ -12,6 +12,7 @@ import GoogleMap from './GoogleMap';
 import Call from "@material-ui/icons/Call";
 import Email from "@material-ui/icons/Email";
 import MyLocation from "@material-ui/icons/MyLocation";
+import { Divider } from '@material-ui/core';
 
 const useStyles = makeStyles({
   avatar: {
@@ -21,6 +22,9 @@ const useStyles = makeStyles({
     margin: 0,
     width: 979,
   },
+  box: {
+    padding: 10,
+  }
  
 });
 
@@ -34,23 +38,24 @@ export default function ImageAvatars() {
          <br /><br /><br /><br />
     <React.Fragment>
             <Title>Contact Me</Title>
-            <Grid item xs={12}>
-                <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >
-                    <Typography color="primary" component="p" variant="subtitle2">
-                        <MyLocation /> 8E Mangga Street, Block 37 Addition Hills, Mandaluyong City 
+            <Divider />
+            {/* xs={12} md={6} lg={6} */}
+            {/* container direction="row" justify="center" alignItems="center" */}
+            <Grid container direction="column" justify="flex-start" alignItems="flex-start" xs={12} md={12} lg={12} >
+                
+                {/* <Box bgcolor="" m={0} border={0} boxShadow={1} className={classes.box} > */}
+                    <Typography component="p" variant="subtitle2">
+                        <MyLocation color="primary" /> 8E Mangga Street, Block 37 Addition Hills, Mandaluyong City 
                     </Typography>
-                    <Typography color="primary" component="p" variant="h6">
-                       <Call />{'    '}+63 917 6932 537
+                    <Typography component="p" variant="h6">
+                       <Call color="primary" />{'    '}+63 917 6932 537
                     </Typography>
-                    <Typography color="primary" component="p" variant="h6">
-                       <Email />{'   '} joebert.fundador@gmail.com
+                    <Typography component="p" variant="h6">
+                       <Email color="primary" />{'   '} joebert.fundador@gmail.com
                     </Typography>
                     
-
-                </Box>
+                {/* </Box> */}
             </Grid>
-              {/* </Box> */}
-    
 
           <Grid container justify="space-around" alignItems="center">
             <Box bgcolor="background.paper" m={1} border={0} boxShadow={1} >

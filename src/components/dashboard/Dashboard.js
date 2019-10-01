@@ -37,13 +37,16 @@ import FrontEnd from './FrontEndDeveloper';
  
 function MadeWithLove() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
+    <>
+    <br />
+    <Typography variant="body2" align="center">
       {'Copyright ©2019 My Portfolio & '}
       <Link color="inherit" href="http://jca.x10host.com/JCAweb/" target="_blank">
          Thesis Project
       </Link>
-      {' by Joebert Fundador.'}
+      <b>{' by Joebert Fundador.'}</b>
     </Typography>
+   </>
   );
 }
 
@@ -129,6 +132,12 @@ const useStyles = makeStyles(theme => ({
   fixedHeight: {
     // height: 550,
   },
+  footer: {
+    width: theme.spacing(160),
+    color: 'white',
+    height: 50,
+    backgroundColor: '#1a237e'
+  }
 }));
 
 export default function Dashboard() {
@@ -313,7 +322,20 @@ export default function Dashboard() {
 
           </Grid>
         </Container>
-        <MadeWithLove />
+        
+        <Grid 
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="flex-start" 
+          xs={12}
+          md={12}
+          lg={12}
+          >
+          <Paper className={classes.footer}>
+            <MadeWithLove />
+          </Paper>
+        </Grid>
       </main>
     </div>
   );

@@ -42,7 +42,11 @@ export default function MediaCard() {
         <Card className={classes.content} >
             <CardMedia className={classes.paperImg} >      
                 <CardContent>
-                    <Typography component="p" variant="h3" align="center" style={{color: '#FFF', marginTop: 180}}>
+                    <Typography component="p" variant="h5" align="center" style={{color: '#FFF', marginTop: 160}}>
+                    Hi, I'm <span style={{color: '#42a5f5'}}>Joebert</span>
+                    </Typography>
+                    <br /><br />
+                    <Typography component="p" variant="h3" align="center" style={{color: '#FFF', }}>
                          Junior <span style={{color: '#42a5f5'}}>Web</span>
                     </Typography>
                     <Typography component="p" variant="h3" align="center" style={{color: '#42a5f5'}}>

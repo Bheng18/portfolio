@@ -70,7 +70,7 @@ export default function Orders() {
       </Table>
       <div className={classes.seeMore}>
         <Link color="primary" href="javascript:;">
-          See more orders
+          See more projects
         </Link>
       </div>
     </React.Fragment>

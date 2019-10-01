@@ -25,12 +25,11 @@ const useStyles = makeStyles({
     paddingTop: '56.25%', // 16:9
   },
 });
-
+// border: 2px solid #2b1973;
 const Button = styled.button`
   color: #2b1973;
   font-size: 1em;
   margin: 0.5em;
-  border: 2px solid #2b1973;
   border-radius: 3px;
   display: block;
   text-decoration: none;

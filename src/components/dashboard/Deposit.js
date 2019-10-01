@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Avatar from '@material-ui/core/Avatar';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { Divider } from '@material-ui/core';
 // import Title from './Title';
 
 
@@ -27,6 +28,11 @@ export default function ImageAvatars() {
       <Grid container justify="center" alignItems="center">
           {/* <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.avatar} /> */}
           <Avatar alt="Remy Sharp" src="/images/benphoto.jpg" className={classes.bigAvatar} />
+          {/* <Typography color="primary" component="p" variant="subtitle1">
+                  Joebert Fundador
+          </Typography> */}
+      </Grid>
+      <Grid container justify="center" alignItems="center">
           <Typography color="primary" component="p" variant="subtitle1">
                   Joebert Fundador
           </Typography>
