@@ -19,7 +19,23 @@ export default function Deposits() {
     <div id="experience">
       <br /><br /><br /><br />
     <React.Fragment>
-      <Title>Works Experience</Title>
+    <Title>Works Experience</Title>
+    <Divider />
+      <Typography color="primary" component="p" variant="subtitle1">
+         AXA Philippines
+      </Typography>
+      <Typography component="p" variant="subtitle2">
+          <ul>
+                <li>Position: - Junior Front-End Developer</li>
+                <li>Nov 2019 – Jun 2020 </li>
+                <li>Responsibilities:
+                  <ul>
+                    <li>Developed Motor claims of insured member.</li>
+                    <li>Integrate Google Map in Mobile application</li>  
+                  </ul>
+                </li>
+          </ul>
+      </Typography>
       <Divider />
       <Typography color="primary" component="p" variant="subtitle1">
          UnionBank of the Philippines

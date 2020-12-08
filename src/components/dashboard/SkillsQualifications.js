@@ -38,14 +38,14 @@ export default function Deposits() {
           <Box bgcolor="background.paper" m={1} border={0} boxShadow={0} >
             <Typography component="p" variant="subtitle2">
               <ul>
-                  <li>Javascript</li>
+                  <li>Javascript(ES6)</li>
                   <li>Node.js</li>
                   <li>Express.js</li>
-                  <li>Typescript / ES6</li>
-                  <li>React.js with Redux</li>
-                  <li>Angular4-7</li>
-                  <li>Material UI / Bootstrap / CSS</li>
-                  <li>Object Oriented Programming</li>
+                  <li>React.js</li>
+                  <li>React-Native</li>
+                  <li>Redux</li>
+                  <li>CSS</li>
+                  <li>Bootstrap</li>
               </ul>
               {/* <Rating value={value} readOnly /> */}
             </Typography>      
@@ -53,14 +53,14 @@ export default function Deposits() {
           <Box bgcolor="background.paper" m={1} border={0} boxShadow={0} >
             <Typography component="p" variant="subtitle2">
               <ul>
+                 <li>Material UI</li>
+                  <li>Native Base</li>
                   <li>REST API</li>
                   <li>Agile Methodology (SCRUM)</li>
                   <li>Git / Github</li>
-                  <li>Java EE</li>
-                  <li>JPA-Hibernate</li>
-                  <li>Spring MVC / SpringBoot WebFlux</li>
                   <li>PHP</li>
-                  <li>MySQL / MongoDb</li>
+                  <li>MySQL</li>
+                  <li>Object Oriented Programming</li>
               </ul>
             </Typography>      
           </Box> 

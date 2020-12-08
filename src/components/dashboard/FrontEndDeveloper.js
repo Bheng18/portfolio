@@ -47,7 +47,7 @@ export default function MediaCard() {
                     </Typography>
                     <br /><br />
                     <Typography component="p" variant="h3" align="center" style={{color: '#FFF', }}>
-                         Junior <span style={{color: '#42a5f5'}}>Web</span>
+                         Junior <span style={{color: '#42a5f5'}}>Application</span>
                     </Typography>
                     <Typography component="p" variant="h3" align="center" style={{color: '#42a5f5'}}>
                          Developer

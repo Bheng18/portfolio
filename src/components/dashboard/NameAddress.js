@@ -26,16 +26,17 @@ export default function Deposits() {
       
       <Typography component="p" variant="subtitle2">
         <ul>
-          <li>1-year experience in IT industry and almost 6 months professional experience in Programming and Web Development.</li>
-          <li>6-months relevant experience Using Node.js, Express.js and ES6 as back-end.</li>
-          <li>3-months experience in React.js Library with Redux as Front-End.</li>
-          <li>Developed the front-end services using React.js with Redux and REST API – HTTP </li>
-          <li>Developed the frontend and backend CRUD operation using Angular4-7 as frontend and Node.js/Express, Spring MVC, SpringBoot, Spring Webflux.</li>
+          <li>1-year experience in IT industry, 3 months professional experience in Web Development and 7 months in Mobile Development.</li>
+          <li>3-months professional experience in front-end services using React.js Library with Redux technology.</li>
+          <li>Developed the Marketing automation management services using React.js with Redux </li>
+          <li>7 Months professional experience in Mobile apps Development using React Native with Redux technology</li>
+          <li>Developed Motor claims of insurance member</li>
+          <li>Integrate google map into mobile application</li>
         </ul>
         <Divider />
         <ul>
            <li>Github: <a href="https://github.com/Bheng18" target="_blank">https://github.com/Bheng18</a></li>
-           <li>ThesisProject: <a href="http://jca.x10host.com/JCAweb/" target="_blank">http://jca.x10host.com/JCAweb/</a></li>
+           {/* <li>ThesisProject: <a href="http://jca.x10host.com/JCAweb/" target="_blank">http://jca.x10host.com/JCAweb/</a></li> */}
         </ul>
       </Typography>
       
